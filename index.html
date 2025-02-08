@@ -11,20 +11,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body>  
+
+    <ul id="slide-out" class="sidenav">     
+      <li><a href="#!"><i class="material-icons">home</i>Головна сторінка</a></li>
+      <li><a href="#!"><i class="material-icons">people</i>Про нас</a></li>
+      <li><a href="#!"><i class="material-icons">grade</i>Послуги</a></li>
+      <li><a href="#!"><i class="material-icons">phone</i>Контакти</a></li>
+      <li><div class="divider"></div></li> 
+      <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрити</a></li>
+    </ul>
+   
+    
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header_title">
                 <img src="img/logo.svg" alt="logo" class="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger"  data-target="slide-out">
                     <span class="burger_line"></span>
                     <span class="burger_line"></span>
                     <span class="burger_line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">Реалізуємо найкрупніші проекти в Україні</h1>
             <h4 class="h4">стадіони, газопроводи, мости, греблі</h4>
@@ -349,6 +361,9 @@
         </footer>
   </footer>
 
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
